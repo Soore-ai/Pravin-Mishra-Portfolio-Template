@@ -1141,5 +1141,17 @@ section {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
-  }
+   }
+/* Footer UI improvements */
+.footer-bottom {
+  padding: 20px 0;
+  line-height: 1.6;
+  color: #e0e0e0; /* improved contrast */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+ }
+
+.footer-bottom p {
+  margin: 6px 0;
+ }
+  
 }
