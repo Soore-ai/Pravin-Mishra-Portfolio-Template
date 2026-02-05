@@ -37,6 +37,35 @@ Add this line (example):
 
 ```html
 <p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
+
+### Code Snippet
+
+**HTML (footer section):**
+```html
+ <div class="footer-bottom">
+        <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
+         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
+        <p> Pravin Mishra Portfolio v1.0 – Deployed on <span id="deploy-date"></span> – By Ed Eguikhide </p>
+      </div>
 ```
+
+**JavaScript:**
+```javascript
+        <script>
+                const today = new Date();
+
+                const day = String(today.getDate()).padStart(2, '0');
+                const month = today.toLocaleString('en-GB', { month: 'short' });
+                const year = today.getFullYear();
+
+                document.getElementById('year').textContent = year;
+                document.getElementById('deploy-date').textContent =
+                `${day} ${month} ${year}`;
+        </script>
+
+    </div>
+  </footer>
+
+``````
 
 ✅ This proof must be visible in your browser screenshot submission.
